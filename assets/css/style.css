@@ -1,0 +1,206 @@
+@import url('reset.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;800&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    max-width: 37.5rem;
+}
+
+p, h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+    max-width: 47.3125rem;
+    padding: 0 0.0625rem;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2.0625rem;
+    font-weight: 800;
+    width: 100%;
+}
+
+.header {
+    background-image: url("../images/header/mobile-background-header.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 31.5625rem;
+    color: white;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+    width: 100%;
+    box-sizing: border-box;    
+}
+
+.header h1 {
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+    line-height: 1.2;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.header button {
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 1.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    width: 100%;
+    max-width: 23.75rem;
+    height: 3.375rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.header #button-1 {
+    color: #23272A;
+    background-color: white;
+}
+
+.header #button-2 {
+    color: white;
+    background-color: #23272A;
+    height: 3.25rem;
+}
+
+main {
+    width: 100%;
+}
+
+.section-1, .section-2, .section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.6875rem;
+    padding: 2.5rem 1.5rem;
+    color: #23272A;
+    box-sizing: border-box;
+}
+
+.section-2, .section-3 {
+    background-color: #F6F6F6;
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6875rem;
+    width: 100%;
+}
+
+main h1 {
+    text-align: start;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 800;
+    width: 100%;
+}
+
+main img {
+    width: 100%;
+    max-width: 37.9375rem;
+    height: auto;
+    display: block;
+}
+
+.section-3 img {
+    max-width: 44.1875rem;
+}
+
+footer {
+    background-color: #23272A;
+    min-height: 8.75rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 26.8125rem) {
+    .header {
+        background-image: url("../images/header/desktop-background-header.png");
+        align-items: center;
+    }
+
+    .header h1 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .header p {
+        text-align: center;
+    }
+    
+    .section-3 h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .section-3 p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 48rem) {
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header button {
+        width: auto;
+        padding: 0.65rem 2rem;
+        min-width: 12.5rem;
+    }
+}
+
+@media (min-width: 61.25rem) {
+    .section-1, .section-2 {
+        flex-direction: row;
+        justify-content: center;
+        padding: 4rem 2.5rem;
+    }
+
+    .section-text {
+        max-width: 21.9375rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 3.375rem;
+    }
+}
